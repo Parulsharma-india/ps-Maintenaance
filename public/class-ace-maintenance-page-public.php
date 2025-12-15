@@ -87,8 +87,9 @@ class Ace_Maintenance_Page_Public {
 		$enabled = ! empty( $ace_maintenance_opts['enabled'] );
 		$ace_maintenance_Preview = isset($_GET['ace_preview']) && current_user_can('manage_options') && isset($_GET['ace_preview_nonce']) && wp_verify_nonce(sanitize_text_field(wp_unslash($_GET['ace_preview_nonce'])), 'ace_preview'); 
 	
-		if ( $enabled || $ace_maintenance_Preview ) {$css_file = plugin_dir_path( __FILE__ ) . 'css/ace-maintenance-page-public.css';wp_enqueue_style($this->plugin_name . '-public',plugin_dir_url( __FILE__ ) . 'css/ace-maintenance-page-public.css',[],file_exists( $css_file ) ? filemtime( $css_file ) : $this->version,'all');
-
+		if ( $enabled || $ace_maintenance_Preview ) {
+			$css_file = plugin_dir_path( __FILE__ ) . 'css/ace-maintenance-page-public.css';
+			wp_enqueue_style($this->plugin_name . '-public',plugin_dir_url( __FILE__ ) . 'css/ace-maintenance-page-public.css',[],file_exists( $css_file ) ? filemtime( $css_file ) : $this->version,'all');
 		}
 
 	}
@@ -182,13 +183,14 @@ class Ace_Maintenance_Page_Public {
 			esc_html__( 'Maintenance Mode', 'ace-maintenance-page' ),
 			[ 'response' => $ace_maintenance_Preview ? 200 : 503 ]
 		);
+		$html = ob_get_clean();
 		} else {
 		wp_die(
 			esc_html__( 'Maintenance page template missing.', 'ace-maintenance-page' ),
 			esc_html__( 'Maintenance Mode', 'ace-maintenance-page' ),
 			[ 'response' => 503 ]
 		);
-		$html = ob_get_clean();
+		
 
 	}
 

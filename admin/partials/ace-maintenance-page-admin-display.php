@@ -51,7 +51,7 @@ if( ! defined( 'ABSPATH' ) ) { exit; }
                 );
                 ?>
                 <p id="ace-preview-link" style="<?php echo ! empty( $ace_maintenance_opts['enabled'] ) ? '' : 'display:none;'; ?>">
-                <a class="" href="<?php echo esc_url( $previewUrl ); ?>" target="_blank">
+                <a class="" href="<?php echo esc_url( $ace_maintenance_preview_url ); ?>" target="_blank">
                     Preview Maintenance
                 </a>
                 </p>
