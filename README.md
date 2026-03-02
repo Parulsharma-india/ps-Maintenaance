@@ -1,6 +1,6 @@
 === ps ===
 Contributors: Parul Sharma
-Donate link: https://Parul Sharma.com/
+Donate link: https://ParulSharma.com/
 Tags: maintenance, coming soon, under construction, site offline
 Requires at least: 5.0
 Tested up to: 6.9
