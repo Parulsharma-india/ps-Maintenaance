@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 /**
  * Admin Settings View
- * @package Ace_Maintenance_Page
+ * @package Ps_Maintenance_Page
  */
 
 $ps_maintenance_opts        = isset( $context['opts'] ) ? $context['opts'] : [];

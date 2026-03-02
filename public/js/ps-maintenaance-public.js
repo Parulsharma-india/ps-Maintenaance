@@ -32,11 +32,11 @@
 })( jQuery );
 
 // jQuery(function($){
-//   $(document).on('click', '.ace-logo-link', function(e){
+//   $(document).on('click', '.ps-logo-link', function(e){
 //     e.preventDefault();
-//     $.post(ACE_MAINT.ajax_url, {
-//       action: 'ace_track',
-//       nonce: ACE_MAINT.nonce,
+//     $.post(PS_MAINT.ajax_url, {
+//       action: 'ps_track',
+//       nonce: PS_MAINT.nonce,
 //       key: 'logo',
 //       action_type: 'open'
 //     });

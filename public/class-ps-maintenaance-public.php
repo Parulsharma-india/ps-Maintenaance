@@ -81,7 +81,7 @@ class PS_Maintenaance_Public {
 		 */
 
 		
-		//wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/ace-maintenance-page-public.css', array(), $this->version, 'all' );
+		//wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/ps-maintenance-page-public.css', array(), $this->version, 'all' );
 
 		$ps_maintenance_opts    = get_option( 'ps_maintenance_options', [] );
 		$enabled = ! empty( $ps_maintenance_opts['enabled'] );
@@ -113,7 +113,7 @@ class PS_Maintenaance_Public {
 		 * class.
 		 */
 
-		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/ace-maintenance-page-public.js', array( 'jquery' ), $this->version, false );
+		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/ps-maintenance-page-public.js', array( 'jquery' ), $this->version, false );
 
 		$ps_maintenance_opts    = get_option( 'ps_maintenance_options', [] );
 		$enabled = ! empty( $ps_maintenance_opts['enabled'] );

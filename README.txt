@@ -27,7 +27,7 @@ This plugin is perfect for website owners who need to temporarily take the site 
 
 == Installation ==
 
-1. Upload the `ace-maintenance-page` folder to the `/wp-content/plugins/` directory.
+1. Upload the `ps-maintenance-page` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the **Plugins** menu in WordPress.
 3. Go to **Settings → ps**.
 4. Enable maintenance mode and customize your page.

@@ -133,7 +133,7 @@ class PS_Maintenaance {
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Ace_Maintenance_Page_i18n class in order to set the domain and to register the hook
+	 * Uses the ps_Maintenance_Page_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0

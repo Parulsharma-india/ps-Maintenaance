@@ -161,7 +161,7 @@ class PS_Maintenaance_Admin {
         if ( ! current_user_can( 'manage_options' ) ) { wp_die( 'Unauthorized' ); }
         check_admin_referer( 'ps_maintenaance_save_action', 'ps_maintenaance_nonce' );
 
-        $ace_maintenance_opts = get_option( 'ace_maintenance_options', [] );
+        $ps_maintenance_opts = get_option( 'ps_maintenance_options', [] );
 
         // Basic fields
 		$ps_maintenance_opts['enabled']     = isset( $_POST['enabled'] ) ? 1 : 0;
@@ -256,7 +256,7 @@ class PS_Maintenaance_Admin {
 			'preview_url' => $ps_previewUrl,
 		];
 
-		// Instead of ACE_MAINT_PATH, use plugin_dir_path with __DIR__
+		// Instead of PS_MAINT_PATH, use plugin_dir_path with __DIR__
 		$ps_maintenance_partial = plugin_dir_path( __FILE__ ) . 'partials/ps-maintenaance-admin-display.php';
 
 		if ( file_exists( $ps_maintenance_partial ) ) {
